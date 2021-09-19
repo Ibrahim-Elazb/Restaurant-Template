@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dine Out - Restaurant</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/aos.js" defer></script> 
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <!--  -----------------  Page Loader  -------------- -->
+  <div class="page-loader">
+    <div class="img-container">
+      <img src="img/logo.png" alt="logo image">
+    </div>
+  </div>
+  <!--  -----------------  Header  -------------- -->
+<header class="py-3">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="logo-container px-3">
+        <a href="#"><img src="img/logo.png" class="img-fluid" alt="website logo"></a>
+      </div>
+      <button class="nav-toggler me-3 d-flex align-items-center justify-content-center"><span></span></button>
+     <div class="custom-nav">
+      <ul>
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#our-menu">Our Menu</a></li>
+        <li class="nav-item"><a href="#testmonials">Testmonials</a></li>
+        <li class="nav-item"><a href="#team">Team</a></li>
+        <li class="nav-item"><a href="#footer">Contact</a></li>
+      </ul>
+     </div>
+    </div>
+  </div>
+</header>
+
+ <!--  -----------------  Home Section  -------------- -->
+<section id="home" class="home-section">
+    <div class="content h-100 d-flex flex-column justify-content-center align-items-center text-center" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+        <h1 class="text-capitalize text-white">dine out restaurant</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel nam voluptates, quisquam earum vero ut optio atque dolorum maiores ullam!</p>
+        <a class="btn btn-default" href="#our-menu">our menu</a>
+    </div>
+</section>
+
+ <!--  -----------------  About Section  -------------- -->
+ <section id="about" class="about-section section-padding">
+   <div class="container">
+     <div class="section-heading" data-title="our story">
+      <h2>about us</h2>
+     </div>
+     <div class="row gy-4 gy-lg-0">
+       <div class="col-lg-6 col-12" data-aos="fade-right">
+        <div class="text-container">
+          <h3>welcome to dine out restaurant</h3>
+          <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis numquam sint voluptatum nisi porro molestiae ratione eaque accusamus odit possimus voluptate obcaecati, eum pariatur quisquam doloribus soluta corporis eligendi fugit.
+          </p>
+          <p>
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis numquam sint voluptatum nisi porro molestiae ratione eaque accusamus odit possimus voluptate obcaecati, eum pariatur quisquam doloribus soluta corporis eligendi fugit.
+          </p>
+          <a href="#our-menu" class="btn btn-default">check our menu</a>
+        </div>
+       </div>
+       <div class="col-lg-6 col-12" data-aos="fade-left">
+         <div class="img-container">
+           <h3 class="img-caption">20+ years experience</h3>
+           <img src="img/about-img.jpg" alt="about us">
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+
+ <!--  --------------------------------------------  Our Menu Section  -------------------------------------------------------- -->
+ <section id="our-menu" class="our-menu-section section-padding">
+  <div class="container">
+      <div class="section-heading" data-title="order now">
+      <h2>our menu</h2>
+      </div>
+      <div class="menu-tabs d-flex w-100 px-1 px-lg-3 text-center justify-content-center pb-5">
+        <button class="menu-tab-item active" data-target="turkey">turkey</button>
+        <button class="menu-tab-item" data-target="duck">duck</button>
+        <button class="menu-tab-item" data-target="sushi">sushi</button>
+        <button class="menu-tab-item" data-target="ice cream">ice cream</button>
+      </div>
+      <div id="recipes-list" class="row g-3">
+      
+      </div>
+  </div>
+
+      <!---------- Dish Details Modal -------------->
+      <div class="modal fade" id="recipe-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"        aria-labelledby="recipe-modal-Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h3 class="modal-title" id="recipe-modal-Label"></h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="m-auto text-center bg-danger fs-1 fw-bold"><img src="" class="img-fluid" alt="">Loading ... </div>
+                    <!-- <ul> -->
+                      
+                    <!-- </ul> -->
+                    <br>
+                    <div class="fs-5 fw-normal"><a href="#" class="text-decoration-none ms-3 border border-2 p-md-2 rounded-pill"></a></div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+      </div>
+</section>
+
+
+ <!--  --------------------------------------------  Tesmonials Section  -------------------------------------------------------- -->
+ <section id="testmonials" class="testmonials-section section-padding">
+  <div class="container">
+      <div class="section-heading" data-title="testmonials">
+      <h2>some feedbacks</h2>
+      </div>
+      <div class="row gx-lg-5 gy-lg-0 gy-3">
+        <div class="col-lg-4" data-aos="fade-right" data-aos-easing="ease-in-sine">
+          <div class="testmonial-card">
+            <div class="testmonial-title">
+              <div class="title-text">
+                <h4>Raj Himatchi</h4>
+                <span>food specialist</span>
+              </div>
+              <img src="img/testimonials/1.jpg" alt="testmonial image">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ratione, laborum quidem consequatur nemo saepe id omnis obcaecati consectetur consequuntur?.</p>
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-right" data-aos-easing="ease-in-sine"> 
+          <div class="testmonial-card">
+          <div class="testmonial-title">
+            <div class="title-text">
+              <h4>Raj Himatchi</h4>
+              <span>food specialist</span>
+            </div>
+            <img src="img/testimonials/2.jpg" alt="testmonial image">
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ratione, laborum quidem consequatur nemo saepe id omnis obcaecati consectetur consequuntur?.</p>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-right" data-aos-easing="ease-in-sine">
+          <div class="testmonial-card">
+            <div class="testmonial-title">
+              <div class="title-text">
+                <h4>Raj Himatchi</h4>
+                <span>food specialist</span>
+              </div>
+              <img src="img/testimonials/3.jpg" alt="testmonial image">
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque ratione, laborum quidem consequatur nemo saepe id omnis obcaecati consectetur consequuntur?.</p>
+            <div class="rate">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+ <!--  --------------------------------------------  Our Team Section  -------------------------------------------------------- -->
+ <section id="team" class="team-section section-padding">
+  <div class="container">
+      <div class="section-heading" data-title="team">
+      <h2>our chefs</h2>
+      </div>
+      <div class="row gx-md-5 gy-5 gy-md-0">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="team-card">
+            <img src="img/team/1.jpg" alt="team chef image">
+              <div class="team-title">
+                <h4>Raj Himatchi</h4>
+                <span>head chef</span>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="team-card">
+            <img src="img/team/2.jpg" alt="team chef image">
+              <div class="team-title">
+                <h4>Raj Himatchi</h4>
+                <span>head chef</span>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="team-card">
+            <img src="img/team/3.jpg" alt="team chef image">
+              <div class="team-title">
+                <h4>Raj Himatchi</h4>
+                <span>head chef</span>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+
+ <!--  --------------------------------------------  Contact Section  -------------------------------------------------------- -->
+ <footer id="footer" class="footer-section">
+  <div class="container">
+    <div class="row gy-md-0 gy-4">
+      <div class="col-md-4">
+        <div class="info-card">
+          <h4 class="card-title">
+            our location
+          </h4>
+          <p>xyz street, Sector 12,</p>
+          <p>Cairo 0000 ---</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-card">
+          <h4 class="card-title">
+            openeing hours
+          </h4>
+          <p>Sunday - Monday</p>
+          <p>8 AM to 11 PM</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="info-card">
+          <h4 class="card-title">
+            contact us
+          </h4>
+          <p><a href="tel:+20 XXX XXXXXXX">+20 XXX XXXXXXX</a></p>
+          <p><a href="mailto:info@gmail.com">info@gmail.com</a></p>
+          <div class="social-containers mt-4">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2021 - Designed By ---------------
+    </div>
+  </div>
+</footer>
+</body>
+</html>
